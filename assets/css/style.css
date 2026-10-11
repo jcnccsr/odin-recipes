@@ -1,0 +1,129 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Styling */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding: 0 2rem;
+    flex: 1;
+}
+
+footer {
+    font-size: smaller;
+    margin: 2rem auto .5rem;
+}
+
+h1 {
+    margin: 2rem auto;
+}
+h2, h3 {
+    margin-top: 2rem;
+}
+h3 {
+    width: 5rem;
+    padding: .5rem;
+    border-radius: .25rem 5rem 5rem .25rem;
+    background-color: bisque;
+}
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    background-color: bisque;
+    padding: .5rem;
+    border-radius: .25rem 5rem 5rem .25rem;
+}
+
+img {
+    margin: 0 auto;
+    border-radius: 3%;
+}
+img:hover, .button:hover {
+    scale: .98;
+}
+.button {
+    color: white;
+    float: right;
+    background-color: red;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.menu li {
+    margin: 1rem;
+}
+.menu li a {
+    color: red;
+    text-decoration: none;
+}
